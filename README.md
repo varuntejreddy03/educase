@@ -13,7 +13,7 @@ A pixel-perfect, responsive React application showcasing a mobile app interface 
 
 ## 🎬 Demo
 
-[Live Demo](https://educase.varuntej.online/) 
+[Live](https://educase.varuntej.online/) 
 
 ---
 
