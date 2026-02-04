@@ -1,0 +1,144 @@
+/* ===========================================
+   POPX GLOBAL STYLES
+   Pixel-perfect design tokens & base styles
+   =========================================== */
+
+/* CSS Custom Properties (Design Tokens) */
+:root {
+  /* Brand Colors */
+  --color-primary: #6C25FF;
+  --color-primary-soft: #CAB3FF;
+  --color-primary-light: #B9A7FF;
+
+  /* Text Colors */
+  --color-text: #1D1D1D;
+  --color-text-muted: #87898E;
+  --color-text-light: #7A7A7A;
+  --color-text-soft: #6A6A6A;
+
+  /* UI Colors */
+  --color-border: #EBEBEB;
+  --color-border-input: #CBCBCB;
+  --color-border-dashed: #D9D9D9;
+  --color-bg: #F7F8F9;
+  --color-bg-white: #ffffff;
+  --color-disabled: #CBCBCB;
+  --color-error: #ff2d2d;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 14px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 40px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-full: 50%;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset & Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-bg-white);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Button Reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Input Reset */
+input,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+/* ==========================================
+   TYPOGRAPHY CLASSES
+   ========================================== */
+
+/* Heading Styles */
+.heading-1 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--color-text);
+  margin: 0 0 12px 0;
+}
+
+/* Paragraph Styles */
+.text-muted {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 28px;
+}
+
+/* Stack Layout */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Form Layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

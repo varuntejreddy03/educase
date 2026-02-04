@@ -1,0 +1,24 @@
+{
+  "name": "PopX - Account Management",
+  "short_name": "PopX",
+  "description": "Create and manage your PopX account with ease",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6C25FF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "lang": "en",
+  "dir": "ltr"
+}

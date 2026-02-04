@@ -1,0 +1,252 @@
+:root{
+  --purple:#6C25FF;
+  --purpleSoft:#CAB3FF;
+  --text:#1D1D1D;
+  --muted:#8B8B8B;
+  --border:#E7E7E7;
+  --bg:#F7F7F7;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#ffffff;
+  color:var(--text);
+}
+
+.web{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.phone{
+  width:375px;
+  height:812px;
+  border:1px solid var(--border);
+  background:#fff;
+  overflow:hidden;
+}
+
+.screen{
+  width:100%;
+  height:100%;
+  position:relative;
+  background:#fff;
+}
+
+.pad{
+  padding:42px 24px 24px 24px;
+}
+
+.h1{
+  margin:0 0 10px 0;
+  font-size:28px;
+  line-height:34px;
+  font-weight:800;
+  letter-spacing:-0.2px;
+}
+
+.p{
+  margin:0 0 28px 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:22px;
+}
+
+.stack{ display:flex; flex-direction:column; gap:14px; }
+
+.btn{
+  width:100%;
+  height:48px;
+  border-radius:6px;
+  border:none;
+  font-weight:700;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.btn.primary{ background:var(--purple); color:#fff; }
+.btn.secondary{ background:var(--purpleSoft); color:#2b2b2b; }
+.btn.disabled{
+  background:#D9D9D9;
+  color:#ffffff;
+  cursor:not-allowed;
+}
+
+.form{ display:flex; flex-direction:column; gap:16px; }
+
+.field{ display:flex; flex-direction:column; gap:8px; }
+.labelRow{ display:flex; align-items:center; gap:8px; }
+.label{
+  font-size:12px;
+  font-weight:700;
+  color:var(--purple);
+}
+.req{ color:#ff2d2d; margin-left:2px; }
+
+.input{
+  height:44px;
+  padding:0 14px;
+  border:1px solid #DCDCDC;
+  border-radius:6px;
+  outline:none;
+  font-size:14px;
+}
+.input::placeholder{ color:#B0B0B0; }
+.input:focus{ border-color:#B9A7FF; }
+
+.welcomeTop{
+  height:520px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  background:#fff;
+}
+
+.bubbles{
+  position:relative;
+  width:210px;
+  height:240px;
+  margin-top:90px;
+}
+
+.bubble{
+  position:absolute;
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  background:#F2B600;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  color:#fff;
+}
+
+.welcomeBottom{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:0 24px 24px 24px;
+}
+
+.createForm{ padding-bottom:90px; }
+
+.agencyBlock{ margin-top:2px; }
+.agencyLabel{
+  font-size:13px;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:10px;
+}
+.agencyRow{ display:flex; gap:26px; align-items:center; }
+
+.radio{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  user-select:none;
+}
+.dot{
+  width:18px;
+  height:18px;
+  border-radius:999px;
+  border:2px solid #C9C9C9;
+  position:relative;
+}
+.dot.on{
+  border-color:var(--purple);
+}
+.dot.on::after{
+  content:"";
+  position:absolute;
+  inset:3px;
+  border-radius:999px;
+  background:var(--purple);
+}
+.radioText{ font-size:14px; font-weight:600; }
+
+.createFooter{
+  position:absolute;
+  left:24px;
+  right:24px;
+  bottom:24px;
+}
+
+.topBar{
+  height:54px;
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  font-size:14px;
+  font-weight:700;
+  border-bottom:1px solid var(--border);
+  background:#fff;
+}
+
+.account{
+  background:var(--bg);
+  height:calc(100% - 54px);
+  padding:18px;
+}
+
+.profileRow{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  padding-bottom:14px;
+  border-bottom:1px dashed #D9D9D9;
+}
+
+.avatarWrap{ position:relative; width:64px; height:64px; }
+.avatar{
+  width:64px;
+  height:64px;
+  border-radius:999px;
+  background:
+    radial-gradient(circle at 35% 35%, #ffffff 0 24%, transparent 25%),
+    radial-gradient(circle at 55% 40%, #ffffff 0 18%, transparent 19%),
+    linear-gradient(135deg, #cfcfcf, #9f9f9f);
+  border:1px solid #E2E2E2;
+}
+.camera{
+  position:absolute;
+  right:-2px;
+  bottom:-2px;
+  width:22px;
+  height:22px;
+  border-radius:6px;
+  background:var(--purple);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid #fff;
+}
+.camDot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background:#fff;
+}
+
+.profileText{ padding-top:6px; }
+.profileName{ font-weight:800; font-size:15px; }
+.profileEmail{ margin-top:2px; font-size:13px; color:#6f6f6f; }
+
+.bio{
+  margin:14px 0 0 0;
+  font-size:13px;
+  line-height:20px;
+  color:#5f5f5f;
+}
+
+.dashLine{
+  margin-top:18px;
+  border-top:1px dashed #D9D9D9;
+}

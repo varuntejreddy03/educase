@@ -1,0 +1,191 @@
+/* ===========================================
+   INFO PANEL STYLES
+   Developer info, tech stack, and links
+   =========================================== */
+
+.info-panel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Toggle Button */
+.info-panel__toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6C25FF 0%, #9B4DFF 100%);
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(108, 37, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.info-panel__toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(108, 37, 255, 0.5);
+}
+
+/* Panel Content */
+.info-panel__content {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 280px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.info-panel__header {
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #6C25FF 0%, #9B4DFF 100%);
+}
+
+.info-panel__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Body */
+.info-panel__body {
+  padding: 16px;
+}
+
+/* Section */
+.info-section {
+  margin-bottom: 16px;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.info-section__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6C25FF;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-section__text {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+.info-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.info-section__list kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  background: #e8e8e8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+/* Tech Badges */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tech-badge--react {
+  background: #61DAFB;
+  color: #000;
+}
+
+.tech-badge--vite {
+  background: #646CFF;
+}
+
+.tech-badge--css {
+  background: #264DE4;
+}
+
+.tech-badge--router {
+  background: #CA4245;
+}
+
+/* Links */
+.info-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.info-link:hover {
+  background: #6C25FF;
+  color: #fff;
+}
+
+/* Mobile: Move to bottom center */
+@media (max-width: 480px) {
+  .info-panel {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .info-panel__content {
+    right: -60px;
+    width: 260px;
+  }
+}
