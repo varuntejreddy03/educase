@@ -13,7 +13,7 @@ A pixel-perfect, responsive React application showcasing a mobile app interface 
 
 ## 🎬 Demo
 
-[Live Demo](https://popx-ui.vercel.app) *(Update after deployment)*
+[Live Demo](https://educase.varuntej.online/) 
 
 ---
 
@@ -222,23 +222,7 @@ Toggle between light and dark themes:
 
 ---
 
-## 📦 Deployment
 
-### Vercel (Recommended)
-
-1. Push code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
-4. Click Deploy
-
-### Netlify
-
-```bash
-npm run build
-# Upload 'dist' folder to Netlify
-```
-
----
 
 ## 👨‍💻 Developer
 
